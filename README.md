@@ -2,13 +2,19 @@
 
 Angular Map Widget using Material Design.
 
+## Getting Started
+* Fork, clone and/or download repo
+* `npm install`
+* `npm test`
+* `npm start`
+
 ## Development server
 
 Run `npm start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Running unit tests
 
-Run `npm tetst` to execute the unit tests via [Jest](https://jestjs.io/).
+Run `npm test` to execute the unit tests via [Jest](https://jestjs.io/).
 
 ## Technology help
 
