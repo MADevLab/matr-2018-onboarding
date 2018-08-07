@@ -1,0 +1,322 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DataSetOptionsComponent html matches the snapshot 1`] = `
+<app-data-set-options
+  changeDate={[Function EventEmitter]}
+  changeSet={[Function EventEmitter]}
+  dataSetControl={[Function FormControl]}
+  dateControl={[Function FormControl]}
+  mapDataPoint={[Function Function]}
+  sortDateOptions={[Function Function]}
+>
+  <mat-form-field
+    class="mat-form-field ng-tns-c3-0 mat-primary mat-form-field-type-mat-select mat-form-field-appearance-legacy mat-form-field-can-float mat-form-field-hide-placeholder ng-untouched ng-pristine ng-valid _mat-animation-noopable"
+  >
+    <div
+      class="mat-form-field-wrapper"
+    >
+      <div
+        class="mat-form-field-flex"
+      >
+        
+        
+        <div
+          class="mat-form-field-infix"
+        >
+          <mat-select
+            aria-disabled="false"
+            aria-invalid="false"
+            aria-label="Select a data set"
+            aria-multiselectable="false"
+            aria-required="false"
+            class="mat-select ng-tns-c4-1 ng-untouched ng-pristine ng-valid ng-star-inserted"
+            id="mat-select-2"
+            ng-reflect-form="[object Object]"
+            ng-reflect-placeholder="Select a data set"
+            placeholder="Select a data set"
+            role="listbox"
+            tabindex="0"
+          >
+            <div
+              aria-hidden="true"
+              cdk-overlay-origin=""
+              class="mat-select-trigger"
+            >
+              <div
+                class="mat-select-value"
+                ng-reflect-ng-switch="true"
+              >
+                
+                <span
+                  class="mat-select-placeholder ng-tns-c4-1 ng-star-inserted"
+                >
+                  Select a data set
+                </span>
+                
+              </div>
+              <div
+                class="mat-select-arrow-wrapper"
+              >
+                <div
+                  class="mat-select-arrow"
+                />
+              </div>
+            </div>
+            
+          </mat-select>
+          <span
+            class="mat-form-field-label-wrapper"
+          >
+            
+            <label
+              aria-owns="mat-select-2"
+              class="mat-form-field-label ng-tns-c3-0 mat-empty mat-form-field-empty ng-star-inserted"
+              for="mat-select-2"
+              id="mat-form-field-label-5"
+              ng-reflect-ng-switch="false"
+            >
+              
+              
+              Select a data set
+              
+              
+            </label>
+          </span>
+        </div>
+        
+      </div>
+      
+      <div
+        class="mat-form-field-underline ng-tns-c3-0 ng-star-inserted"
+      >
+        <span
+          class="mat-form-field-ripple"
+        />
+      </div>
+      <div
+        class="mat-form-field-subscript-wrapper"
+        ng-reflect-ng-switch="hint"
+      >
+        
+        
+        <div
+          class="mat-form-field-hint-wrapper ng-tns-c3-0 ng-trigger ng-trigger-transitionMessages ng-star-inserted"
+          style="opacity:1;transform:translateY(0%);0:opacity;1:transform;"
+        >
+          
+          <div
+            class="mat-form-field-hint-spacer"
+          />
+        </div>
+      </div>
+    </div>
+  </mat-form-field><mat-form-field
+    class="mat-form-field ng-tns-c3-2 mat-primary mat-form-field-type-mat-select mat-form-field-appearance-legacy mat-form-field-can-float mat-form-field-hide-placeholder mat-form-field-disabled ng-untouched ng-pristine _mat-animation-noopable"
+  >
+    <div
+      class="mat-form-field-wrapper"
+    >
+      <div
+        class="mat-form-field-flex"
+      >
+        
+        
+        <div
+          class="mat-form-field-infix"
+        >
+          <mat-select
+            aria-disabled="true"
+            aria-invalid="false"
+            aria-label="View data set at..."
+            aria-multiselectable="false"
+            aria-required="false"
+            class="mat-select ng-tns-c4-3 ng-untouched ng-pristine mat-select-disabled ng-star-inserted"
+            id="mat-select-3"
+            ng-reflect-form="[object Object]"
+            ng-reflect-placeholder="View data set at..."
+            placeholder="View data set at..."
+            role="listbox"
+            tabindex="-1"
+          >
+            <div
+              aria-hidden="true"
+              cdk-overlay-origin=""
+              class="mat-select-trigger"
+            >
+              <div
+                class="mat-select-value"
+                ng-reflect-ng-switch="true"
+              >
+                
+                <span
+                  class="mat-select-placeholder ng-tns-c4-3 ng-star-inserted"
+                >
+                  View data set at...
+                </span>
+                
+              </div>
+              <div
+                class="mat-select-arrow-wrapper"
+              >
+                <div
+                  class="mat-select-arrow"
+                />
+              </div>
+            </div>
+            
+          </mat-select>
+          <span
+            class="mat-form-field-label-wrapper"
+          >
+            
+            <label
+              aria-owns="mat-select-3"
+              class="mat-form-field-label ng-tns-c3-2 mat-empty mat-form-field-empty ng-star-inserted"
+              for="mat-select-3"
+              id="mat-form-field-label-7"
+              ng-reflect-ng-switch="false"
+            >
+              
+              
+              View data set at...
+              
+              
+            </label>
+          </span>
+        </div>
+        
+      </div>
+      
+      <div
+        class="mat-form-field-underline ng-tns-c3-2 ng-star-inserted"
+      >
+        <span
+          class="mat-form-field-ripple"
+        />
+      </div>
+      <div
+        class="mat-form-field-subscript-wrapper"
+        ng-reflect-ng-switch="hint"
+      >
+        
+        
+        <div
+          class="mat-form-field-hint-wrapper ng-tns-c3-2 ng-trigger ng-trigger-transitionMessages ng-star-inserted"
+          style="opacity:1;transform:translateY(0%);0:opacity;1:transform;"
+        >
+          
+          <div
+            class="mat-form-field-hint-spacer"
+          />
+        </div>
+      </div>
+    </div>
+  </mat-form-field>
+</app-data-set-options>
+`;
+
+exports[`DataSetOptionsComponent on selection of a data set changeDate emits -1 if the dateControl has no value 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      -1,
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+  ],
+}
+`;
+
+exports[`DataSetOptionsComponent on selection of a data set changeDate emits -1 if the dateControl value is not in the dataset 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      -1,
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+  ],
+}
+`;
+
+exports[`DataSetOptionsComponent on selection of a data set changeDate emits the dateControl value, if the control has a value and that value is in the data set 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      665,
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+  ],
+}
+`;
+
+exports[`DataSetOptionsComponent on selection of a data set if the dateControl value is not in the dataset, it is set to -1 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      -1,
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+  ],
+}
+`;
+
+exports[`DataSetOptionsComponent on selection of a data set parses and sorts the dates out of the dataset 1`] = `
+Array [
+  Object {
+    "label": "2015Q1",
+    "value": 661,
+  },
+  Object {
+    "label": "2015Q2",
+    "value": 662,
+  },
+  Object {
+    "label": "2015Q3",
+    "value": 663,
+  },
+  Object {
+    "label": "2015Q4",
+    "value": 664,
+  },
+  Object {
+    "label": "2016Q1",
+    "value": 665,
+  },
+  Object {
+    "label": "2016Q2",
+    "value": 666,
+  },
+]
+`;
+
+exports[`DataSetOptionsComponent on setting data sets pushes the values into dataSetOptions, if dataSets are defined 1`] = `
+Array [
+  Object {
+    "label": "Foo",
+    "value": 0,
+  },
+  Object {
+    "label": "Bar",
+    "value": 1,
+  },
+]
+`;

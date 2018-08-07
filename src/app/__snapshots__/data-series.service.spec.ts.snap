@@ -1,0 +1,271 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DataSeriesService gets a data set 1`] = `
+Object {
+  "concept": "FGDP$",
+  "data": Array [
+    Object {
+      "date": "2015Q1",
+      "mapData": Array [
+        Object {
+          "code": "ak",
+          "value": 49.29,
+        },
+        Object {
+          "code": "al",
+          "value": 177.56,
+        },
+        Object {
+          "code": "ar",
+          "value": 107.06,
+        },
+        Object {
+          "code": "az",
+          "value": 263.13,
+        },
+        Object {
+          "code": "ca",
+          "value": 2226.61,
+        },
+        Object {
+          "code": "co",
+          "value": 286.63,
+        },
+        Object {
+          "code": "ct",
+          "value": 225.09,
+        },
+      ],
+      "period": 661,
+    },
+    Object {
+      "date": "2015Q2",
+      "mapData": Array [
+        Object {
+          "code": "ak",
+          "value": 49.29,
+        },
+        Object {
+          "code": "al",
+          "value": 177.56,
+        },
+        Object {
+          "code": "ar",
+          "value": 107.06,
+        },
+        Object {
+          "code": "az",
+          "value": 263.13,
+        },
+        Object {
+          "code": "ca",
+          "value": 2226.61,
+        },
+        Object {
+          "code": "co",
+          "value": 286.63,
+        },
+        Object {
+          "code": "ct",
+          "value": 225.09,
+        },
+      ],
+      "period": 662,
+    },
+    Object {
+      "date": "2015Q4",
+      "mapData": Array [
+        Object {
+          "code": "ak",
+          "value": 49.29,
+        },
+        Object {
+          "code": "al",
+          "value": 177.56,
+        },
+        Object {
+          "code": "ar",
+          "value": 107.06,
+        },
+        Object {
+          "code": "az",
+          "value": 263.13,
+        },
+        Object {
+          "code": "ca",
+          "value": 2226.61,
+        },
+        Object {
+          "code": "co",
+          "value": 286.63,
+        },
+        Object {
+          "code": "ct",
+          "value": 225.09,
+        },
+      ],
+      "period": 664,
+    },
+    Object {
+      "date": "2015Q3",
+      "mapData": Array [
+        Object {
+          "code": "ak",
+          "value": 49.29,
+        },
+        Object {
+          "code": "al",
+          "value": 177.56,
+        },
+        Object {
+          "code": "ar",
+          "value": 107.06,
+        },
+        Object {
+          "code": "az",
+          "value": 263.13,
+        },
+        Object {
+          "code": "ca",
+          "value": 2226.61,
+        },
+        Object {
+          "code": "co",
+          "value": 286.63,
+        },
+        Object {
+          "code": "ct",
+          "value": 225.09,
+        },
+      ],
+      "period": 663,
+    },
+    Object {
+      "date": "2016Q1",
+      "mapData": Array [
+        Object {
+          "code": "ak",
+          "value": 49.29,
+        },
+        Object {
+          "code": "al",
+          "value": 177.56,
+        },
+        Object {
+          "code": "ar",
+          "value": 107.06,
+        },
+        Object {
+          "code": "az",
+          "value": 263.13,
+        },
+        Object {
+          "code": "ca",
+          "value": 2226.61,
+        },
+        Object {
+          "code": "co",
+          "value": 286.63,
+        },
+        Object {
+          "code": "ct",
+          "value": 225.09,
+        },
+      ],
+      "period": 665,
+    },
+    Object {
+      "date": "2016Q2",
+      "mapData": Array [
+        Object {
+          "code": "ak",
+          "value": 49.29,
+        },
+        Object {
+          "code": "al",
+          "value": 177.56,
+        },
+        Object {
+          "code": "ar",
+          "value": 107.06,
+        },
+        Object {
+          "code": "az",
+          "value": 263.13,
+        },
+        Object {
+          "code": "ca",
+          "value": 2226.61,
+        },
+        Object {
+          "code": "co",
+          "value": 286.63,
+        },
+        Object {
+          "code": "ct",
+          "value": 225.09,
+        },
+      ],
+      "period": 666,
+    },
+  ],
+  "description": "Gross State Product: Total, (Bil. Chained 2009 $, SAAR)",
+  "freq": 162,
+  "source": "U.S. Bureau of Economic Analysis (BEA); Moody's Analytics Estimated and Forecasted",
+  "transformation": "None",
+}
+`;
+
+exports[`DataSeriesService gets the list of data sets 1`] = `
+Map {
+  0 => Object {
+    "dataUrl": "home-sales.json",
+    "label": "home sales",
+  },
+  1 => Object {
+    "dataUrl": "gross-domestic-product.json",
+    "label": "gross domestic product",
+  },
+  2 => Object {
+    "dataUrl": "avg-household-income.json",
+    "label": "avg. household income",
+  },
+}
+`;
+
+exports[`DataSeriesService gets the regions 1`] = `
+Array [
+  Object {
+    "id": "NE",
+    "regions": Array [
+      "CT",
+      "DC",
+      "DE",
+    ],
+    "title": "Northeast",
+  },
+  Object {
+    "id": "MW",
+    "regions": Array [
+      "WI",
+    ],
+    "title": "Midwest",
+  },
+  Object {
+    "id": "SO",
+    "regions": Array [
+      "AL",
+      "AR",
+    ],
+    "title": "South",
+  },
+  Object {
+    "id": "WE",
+    "regions": Array [
+      "WA",
+      "WY",
+    ],
+    "title": "West",
+  },
+]
+`;

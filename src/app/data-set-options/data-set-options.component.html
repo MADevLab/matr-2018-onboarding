@@ -1,0 +1,16 @@
+<mat-form-field>
+  <mat-select [formControl]="dataSetControl"
+              placeholder="Select a data set"
+              (selectionChange)="changeSet.emit($event.value)">
+    <mat-option *ngFor="let o of dataSetOptions"
+                [value]="o.value">{{o.label}}</mat-option>
+  </mat-select>
+</mat-form-field>
+<mat-form-field>
+  <mat-select [formControl]="dateControl"
+              placeholder="View data set at..."
+              (selectionChange)="changeDate.emit($event.value)">
+    <mat-option *ngFor="let o of dateOptions"
+                [value]="o.value">{{o.label}}</mat-option>
+  </mat-select>
+</mat-form-field>

@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The RegionsOptionsComponent emits changes to the regions 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Array [
+        Object {
+          "id": "NE",
+          "regions": Array [
+            "CT",
+            "DC",
+            "DE",
+          ],
+          "title": "Northeast",
+        },
+        Object {
+          "id": "SO",
+          "regions": Array [
+            "AL",
+            "AR",
+          ],
+          "title": "South",
+        },
+      ],
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+  ],
+}
+`;

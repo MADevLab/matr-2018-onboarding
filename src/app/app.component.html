@@ -1,0 +1,35 @@
+<mat-toolbar color="primary">
+  <mat-icon svgIcon="map"></mat-icon>
+  <span class="brand">Map Widget</span>
+</mat-toolbar>
+<div style="display: flex;">
+  <div style="flex: 1 1 auto;">
+    <ng-container *ngIf="dataSets$ | async as dataSets; else loadingDataSets">
+      <br/>
+      <app-data-set-options [dataSets]="dataSets"
+                            (changeSet)="changeDataSet($event)"
+                            [chosenSet]="chosenDataSet$ | async"
+                            (changeDate)="changeViewDate($event)"></app-data-set-options>
+      <div>[Add Regions]</div>
+    </ng-container>
+  </div>
+</div>
+<br/>
+<div style="display: flex" *ngIf="dataSets$ | async as dataSets;">
+  <div style="flex: 1 1 auto; min-width: 50%; min-height: 600px;">
+    <mat-card>
+      <ng-container *ngIf="mapData; else makeSelections">
+        <app-map-view [title]="title"
+                      [concept]="concept"
+                      [dataPoints]="mapData"
+                      [selectedRegions]="selectedRegions"></app-map-view>
+      </ng-container>
+    </mat-card>
+  </div>
+</div>
+<ng-template #loadingDataSets>
+  <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+</ng-template>
+<ng-template #makeSelections>
+  Please choose a date set and date to view the map
+</ng-template>

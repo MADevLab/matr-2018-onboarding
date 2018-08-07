@@ -1,0 +1,342 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MapViewComponent on change filters the data 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Array [
+        Object {
+          "id": "NE",
+          "regions": Array [
+            "CT",
+            "DC",
+            "DE",
+          ],
+          "title": "Northeast",
+        },
+        Object {
+          "id": "MW",
+          "regions": Array [
+            "WI",
+          ],
+          "title": "Midwest",
+        },
+        Object {
+          "id": "SO",
+          "regions": Array [
+            "AL",
+            "AR",
+          ],
+          "title": "South",
+        },
+        Object {
+          "id": "WE",
+          "regions": Array [
+            "WA",
+            "WY",
+          ],
+          "title": "West",
+        },
+      ],
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": Array [
+        "CT",
+        "DC",
+        "DE",
+        "WI",
+        "AL",
+        "AR",
+        "WA",
+        "WY",
+      ],
+    },
+  ],
+}
+`;
+
+exports[`MapViewComponent on change filters the data based on the regions 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Array [
+        Object {
+          "code": "AL",
+          "value": 84.58,
+        },
+        Object {
+          "code": "AR",
+          "value": 44.47,
+        },
+        Object {
+          "code": "CT",
+          "value": 35.69,
+        },
+        Object {
+          "code": "DC",
+          "value": 6.36,
+        },
+        Object {
+          "code": "DE",
+          "value": 9.6,
+        },
+        Object {
+          "code": "WA",
+          "value": 103.66,
+        },
+        Object {
+          "code": "WI",
+          "value": 86.11,
+        },
+        Object {
+          "code": "WY",
+          "value": 8.84,
+        },
+      ],
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+  ],
+}
+`;
+
+exports[`MapViewComponent on change formats the data and calls render 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Array [
+        Object {
+          "code": "AK",
+          "value": 18.1,
+        },
+        Object {
+          "code": "AL",
+          "value": 84.58,
+        },
+        Object {
+          "code": "AR",
+          "value": 44.47,
+        },
+        Object {
+          "code": "AZ",
+          "value": 112.52,
+        },
+        Object {
+          "code": "CA",
+          "value": 375.38,
+        },
+        Object {
+          "code": "CO",
+          "value": 101.97,
+        },
+        Object {
+          "code": "CT",
+          "value": 35.69,
+        },
+        Object {
+          "code": "DC",
+          "value": 6.36,
+        },
+        Object {
+          "code": "DE",
+          "value": 9.6,
+        },
+        Object {
+          "code": "FL",
+          "value": 435.75,
+        },
+        Object {
+          "code": "GA",
+          "value": 142.13,
+        },
+        Object {
+          "code": "HI",
+          "value": 16.38,
+        },
+        Object {
+          "code": "IA",
+          "value": 53.2,
+        },
+        Object {
+          "code": "ID",
+          "value": 36.03,
+        },
+        Object {
+          "code": "IL",
+          "value": 185.43,
+        },
+        Object {
+          "code": "IN",
+          "value": 118.85,
+        },
+        Object {
+          "code": "KS",
+          "value": 38.62,
+        },
+        Object {
+          "code": "KY",
+          "value": 62.43,
+        },
+        Object {
+          "code": "LA",
+          "value": 55.09,
+        },
+        Object {
+          "code": "MA",
+          "value": 71.14,
+        },
+        Object {
+          "code": "MD",
+          "value": 70.91,
+        },
+        Object {
+          "code": "ME",
+          "value": 16.34,
+        },
+        Object {
+          "code": "MI",
+          "value": 156.56,
+        },
+        Object {
+          "code": "MN",
+          "value": 86,
+        },
+        Object {
+          "code": "MO",
+          "value": 97.64,
+        },
+        Object {
+          "code": "MS",
+          "value": 39.08,
+        },
+        Object {
+          "code": "MT",
+          "value": 16.16,
+        },
+        Object {
+          "code": "NC",
+          "value": 134.4,
+        },
+        Object {
+          "code": "ND",
+          "value": 12.5,
+        },
+        Object {
+          "code": "NE",
+          "value": 33.42,
+        },
+        Object {
+          "code": "NH",
+          "value": 18.34,
+        },
+        Object {
+          "code": "NJ",
+          "value": 89.13,
+        },
+        Object {
+          "code": "NM",
+          "value": 24.98,
+        },
+        Object {
+          "code": "NV",
+          "value": 65.87,
+        },
+        Object {
+          "code": "NY",
+          "value": 143.63,
+        },
+        Object {
+          "code": "OH",
+          "value": 223.17,
+        },
+        Object {
+          "code": "OK",
+          "value": 62.36,
+        },
+        Object {
+          "code": "OR",
+          "value": 62.43,
+        },
+        Object {
+          "code": "PA",
+          "value": 141.63,
+        },
+        Object {
+          "code": "RI",
+          "value": 11.17,
+        },
+        Object {
+          "code": "SC",
+          "value": 77.15,
+        },
+        Object {
+          "code": "SD",
+          "value": 5.16,
+        },
+        Object {
+          "code": "TN",
+          "value": 110.86,
+        },
+        Object {
+          "code": "TX",
+          "value": 399.95,
+        },
+        Object {
+          "code": "UT",
+          "value": 54.35,
+        },
+        Object {
+          "code": "VA",
+          "value": 106.38,
+        },
+        Object {
+          "code": "VT",
+          "value": 9.6,
+        },
+        Object {
+          "code": "WA",
+          "value": 103.66,
+        },
+        Object {
+          "code": "WI",
+          "value": 86.11,
+        },
+        Object {
+          "code": "WV",
+          "value": 25.16,
+        },
+        Object {
+          "code": "WY",
+          "value": 8.84,
+        },
+      ],
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+  ],
+}
+`;
+
+exports[`MapViewComponent produces an array of states based on the regions 1`] = `
+Array [
+  "CT",
+  "DC",
+  "DE",
+  "WI",
+  "AL",
+  "AR",
+  "WA",
+  "WY",
+]
+`;

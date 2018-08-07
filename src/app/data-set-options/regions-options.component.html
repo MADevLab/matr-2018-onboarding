@@ -1,0 +1,9 @@
+<mat-form-field>
+  <mat-select multiple
+              [formControl]="regionControl"
+              placeholder="Filter displayed regions"
+              (selectionChange)="onRegionsChange($event.value)">
+    <mat-option *ngFor="let o of regions"
+                [value]="o.id">{{o.title}}</mat-option>
+  </mat-select>
+</mat-form-field>

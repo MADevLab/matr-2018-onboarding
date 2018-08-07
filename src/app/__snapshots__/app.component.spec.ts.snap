@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppComponent when changing the view date returns the data for the date 1`] = `
+Object {
+  "date": "2015Q2",
+  "mapData": Array [
+    Object {
+      "code": "ak",
+      "value": 49.29,
+    },
+    Object {
+      "code": "al",
+      "value": 177.56,
+    },
+    Object {
+      "code": "ar",
+      "value": 107.06,
+    },
+    Object {
+      "code": "az",
+      "value": 263.13,
+    },
+    Object {
+      "code": "ca",
+      "value": 2226.61,
+    },
+    Object {
+      "code": "co",
+      "value": 286.63,
+    },
+    Object {
+      "code": "ct",
+      "value": 225.09,
+    },
+  ],
+  "period": 662,
+}
+`;
+
+exports[`AppComponent when selecting the dataset sets the concept 1`] = `"FGDP$"`;
+
+exports[`AppComponent when selecting the dataset sets the title 1`] = `"Gross State Product: Total, (Bil. Chained 2009 $, SAAR)"`;
