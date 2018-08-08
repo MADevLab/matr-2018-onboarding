@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { BehaviorSubject, timer } from 'rxjs';
+import { BehaviorSubject, timer, Observable } from 'rxjs';
 import { filter, switchMap, switchMapTo, tap } from 'rxjs/operators';
 import { DataSeriesService } from './data-series.service';
 import { DataPoints } from './data-set.model';
 import { DomSanitizer } from '@angular/platform-browser';
 import { MatIconRegistry } from '@angular/material';
 import { Regions } from './regions.model';
+import { DataSetOption } from './data-set-option.model';
 
 @Component({
   selector: 'app-root',
@@ -13,21 +14,70 @@ import { Regions } from './regions.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  public dataSets$;
 
-  public chosenDataSet$;
+  /**
+   * Observable list of data sets used in UI.
+   *
+   * @type {Observable<Map<number, DataSetOption>>}
+   * @memberof AppComponent
+   */
+  public dataSets$: Observable<Map<number, DataSetOption>>;
 
-  public regions$;
+  /**
+   * Observable of the selected data set, used in UI.
+   *
+   * @type {Observable<DataSet>}
+   * @memberof AppComponent
+   */
+  public chosenDataSet$: Observable<DataSet>;
 
+  /**
+   * Observable list regions, used in UI.
+   *
+   * @type {Observable<Regions>}
+   * @memberof AppComponent
+   */
+  public regions$: Observable<Regions[]>;
+
+  /**
+   * The variable Id from the data set.
+   *
+   * @type {string}
+   * @memberof AppComponent
+   */
   public concept: string = null;
 
+  /**
+   * The variable title from the data set.
+   *
+   * @type {string}
+   * @memberof AppComponent
+   */
   public title: string = null;
 
+  /**
+   * The parsed data used for building the map.
+   *
+   * @type {DataPoints}
+   * @memberof AppComponent
+   */
   public mapData: DataPoints = null;
 
+  /**
+   * The regions to display data for.
+   *
+   * @type {Regions[]}
+   * @memberof AppComponent
+   */
   public selectedRegions: Regions[];
 
-
+  /**
+   * Behavior subject of the chosen data set Id. Changes on
+   * every change of the data set Id.
+   *
+   * @private
+   * @memberof AppComponent
+   */
   private chosenDataSetId = new BehaviorSubject<number>(-1);
 
   /**
@@ -47,6 +97,11 @@ export class AppComponent implements OnInit {
       sanitizer.bypassSecurityTrustResourceUrl('/assets/img/map.svg'));
   }
 
+  /**
+   * Event handle called on initialization of the component.
+   *
+   * @memberof AppComponent
+   */
   public ngOnInit() {
     this.regions$ = this.dataSeriesService.getRegions();
 
@@ -66,14 +121,32 @@ export class AppComponent implements OnInit {
     );
   }
 
+  /**
+   * Event handler for when the selected data set changes.
+   *
+   * @param {*} dataSetId
+   * @memberof AppComponent
+   */
   public changeDataSet(dataSetId) {
     this.chosenDataSetId.next(dataSetId);
   }
 
+  /**
+   * Event handler for when the selected date changes.
+   *
+   * @param {number} date
+   * @memberof AppComponent
+   */
   public changeViewDate(date: number) {
     throw new Error('Missing Logic');
   }
 
+  /**
+   * Event handler for when the selected region changes.
+   *
+   * @param {Regions[]} values
+   * @memberof AppComponent
+   */
   public changeRegions(values: Regions[]) {
     throw new Error('Missing Logic');
   }

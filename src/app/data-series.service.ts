@@ -9,6 +9,12 @@ import { Regions } from './regions.model';
   providedIn: 'root'
 })
 export class DataSeriesService {
+
+  /**
+   * s3 bucket containing dataset json.
+   *
+   * @memberof DataSeriesService
+   */
   public s3Url = 'https://s3-us-west-2.amazonaws.com/ma-cs-matr-2018-onboarding';
 
   // fallback if s3 is inaccessible. if requests are failing,
@@ -17,25 +23,51 @@ export class DataSeriesService {
 
   constructor(private http: HttpClient) {}
 
-  public getDataSets() {
+  /**
+   * Gets the list of available data sets.
+   *
+   * @returns {Observable<Map<number, DataSetOption>>}
+   * @memberof DataSeriesService
+   */
+  public getDataSets(): Observable<Map<number, DataSetOption>> {
     throw new Error('Missing Logic');
   }
 
+  /**
+   * Gets a dataset based on the dataset Id.
+   *
+   * @param {number} dataSetId
+   * @returns {Observable<DataSet>}
+   * @memberof DataSeriesService
+   */
   public getDataSet(dataSetId: number): Observable<DataSet> {
     throw new Error('Missing Logic');
 
-    // uncomment once missing logic is implemented
+    // part of the solution
     // const url = `${this.s3Url}/${dataSets.get(dataSetId).dataUrl}`;
 
   }
 
+  /**
+   * Gets the list of available regions.
+   *
+   * @returns {Observable<Regions[]>}
+   * @memberof DataSeriesService
+   */
   public getRegions(): Observable<Regions[]> {
     const url = 'assets/regions.json';
 
     throw new Error('Missing Logic');
   }
 
-  private createDataSets() {
+  /**
+   * Hardcoded list of available data sets.
+   *
+   * @private
+   * @returns {Map<number, DataSetOption>}
+   * @memberof DataSeriesService
+   */
+  private createDataSets(): Map<number, DataSetOption> {
     const dataSets = new Map<number, DataSetOption>();
     dataSets.set(0, {
       label: 'home sales',
