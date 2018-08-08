@@ -9,12 +9,38 @@ declare var Highcharts: any;
   templateUrl: './map-view.component.html'
 })
 export class MapViewComponent implements OnChanges {
+
+  /**
+   * Datapoints used when rendering the chart.
+   *
+   * @type {DataPoints}
+   * @memberof MapViewComponent
+   */
   @Input() public dataPoints: DataPoints;
 
+  /**
+   * The title of the chart.
+   *
+   * @type {string}
+   * @memberof MapViewComponent
+   */
   @Input() public title: string = null;
 
+  /**
+   * The concept/variable Id for display.
+   *
+   * @type {string}
+   * @memberof MapViewComponent
+   */
   @Input() public concept: string = null;
 
+  /**
+   * The array of regions to display data for. If an empty array,
+   * display all regions.
+   *
+   * @type {Regions[]}
+   * @memberof MapViewComponent
+   */
   @Input() public selectedRegions: Regions[];
 
   /**
@@ -27,6 +53,11 @@ export class MapViewComponent implements OnChanges {
 
   constructor() {}
 
+  /**
+   * Event handler for when any data-bounded property changes on the component.
+   *
+   * @memberof MapViewComponent
+   */
   ngOnChanges() {
     if (this.map) {
       this.map.destroy();
@@ -45,10 +76,23 @@ export class MapViewComponent implements OnChanges {
     //this.renderHighmap(data);
   }
 
+  /**
+   * Gets the list of states to filter the map for.
+   *
+   * @param {Regions[]} regions
+   * @returns {string[]}
+   * @memberof MapViewComponent
+   */
   public getStates(regions: Regions[]): string[] {
     throw new Error('Missing Logic');
   }
 
+  /**
+   * Creates the map/chart.
+   *
+   * @param {*} data
+   * @memberof MapViewComponent
+   */
   public renderHighmap(data: any) {
     const el = document.getElementById('container');
 
@@ -109,6 +153,12 @@ export class MapViewComponent implements OnChanges {
     }
   }
 
+  /**
+   * Formats a data point to be readable by HighCharts.
+   *
+   * @private
+   * @memberof MapViewComponent
+   */
   private formatMapData = (dataPoint: DataPoint) => {
     return Object.assign({}, dataPoint, { code: dataPoint.code.toUpperCase() });
   }
