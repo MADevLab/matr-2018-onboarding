@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { BehaviorSubject, timer, Observable } from 'rxjs';
 import { filter, switchMap, switchMapTo, tap } from 'rxjs/operators';
 import { DataSeriesService } from './data-series.service';
-import { DataPoints } from './data-set.model';
+import { DataPoints, DataSet } from './data-set.model';
 import { DomSanitizer } from '@angular/platform-browser';
 import { MatIconRegistry } from '@angular/material';
 import { Regions } from './regions.model';
