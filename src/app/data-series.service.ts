@@ -30,7 +30,7 @@ export class DataSeriesService {
    * @memberof DataSeriesService
    */
   public getDataSets(): Observable<Map<number, DataSetOption>> {
-    throw new Error('Missing Logic');
+    return of(this.createDataSets());
   }
 
   /**
@@ -41,11 +41,12 @@ export class DataSeriesService {
    * @memberof DataSeriesService
    */
   public getDataSet(dataSetId: number): Observable<DataSet> {
-    throw new Error('Missing Logic');
+    const dataSets = this.createDataSets();
 
     // part of the solution
-    // const url = `${this.s3Url}/${dataSets.get(dataSetId).dataUrl}`;
+    const url = `${this.s3Url}/${dataSets.get(dataSetId).dataUrl}`;
 
+    return this.http.get<DataSet>(url);
   }
 
   /**
@@ -57,7 +58,7 @@ export class DataSeriesService {
   public getRegions(): Observable<Regions[]> {
     const url = 'assets/regions.json';
 
-    throw new Error('Missing Logic');
+    return this.http.get<Regions[]>(url);
   }
 
   /**

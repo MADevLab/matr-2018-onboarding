@@ -63,17 +63,17 @@ export class MapViewComponent implements OnChanges {
       this.map.destroy();
     }
 
-    throw new Error('Missing Logic');
+    const data = this.dataPoints.mapData.map(dp => this.formatMapData(dp));
 
-    const regions = this.getStates(this.selectedRegions);
+    // //const regions = this.getStates(this.selectedRegions);
 
-    if (regions && regions.length) {
-      // uncomment once data logic is implemented
-      //data = data.filter(({ code }) => regions.includes(code));
-    }
+    // if (regions && regions.length) {
+    //   // uncomment once data logic is implemented
+    //   //data = data.filter(({ code }) => regions.includes(code));
+    // }
 
     // uncomment once data logic is implemented
-    //this.renderHighmap(data);
+    this.renderHighmap(data);
   }
 
   /**

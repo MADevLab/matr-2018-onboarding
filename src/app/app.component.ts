@@ -105,8 +105,7 @@ export class AppComponent implements OnInit {
   public ngOnInit() {
     this.regions$ = this.dataSeriesService.getRegions();
 
-    // uncomment once data-series-.service is working
-    //this.dataSets$ = timer(3000).pipe(switchMapTo(this.dataSeriesService.getDataSets()));
+    this.dataSets$ = timer(3000).pipe(switchMapTo(this.dataSeriesService.getDataSets()));
     this.chosenDataSet$ = this.chosenDataSetId.pipe(
       filter(id => id !== -1),
       switchMap(id => this.dataSeriesService.getDataSet(id)),
@@ -138,7 +137,16 @@ export class AppComponent implements OnInit {
    * @memberof AppComponent
    */
   public changeViewDate(date: number) {
-    throw new Error('Missing Logic');
+    if (date === -1) {
+      this.mapData = null;
+      return;
+    }
+
+    if (!this.dataPoints.has(date)) {
+      throw new Error('Index out of range: Cannot find date in dataset');
+    }
+
+    this.mapData = this.dataPoints.get(date);
   }
 
   /**
@@ -148,6 +156,6 @@ export class AppComponent implements OnInit {
    * @memberof AppComponent
    */
   public changeRegions(values: Regions[]) {
-    throw new Error('Missing Logic');
+    this.selectedRegions = values;
   }
 }

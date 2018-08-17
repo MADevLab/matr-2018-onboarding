@@ -95,7 +95,19 @@ export class DataSetOptionsComponent implements OnChanges {
    * @memberof DataSetOptionsComponent
    */
   public onDataSetsChange() {
-    throw new Error('Missing Logic');
+    this.dataSetOptions = [];
+    this.dataSetControl.setValue(-1);
+    this.dateControl.setValue(-1);
+    this.dateControl.disable();
+
+    if (this.dataSets) {
+      this.dataSets.forEach((dataSet, index) => {
+        this.dataSetOptions.push({
+          label: dataSet.label,
+          value: index
+        });
+      });
+    }
   }
 
   /**
@@ -111,10 +123,11 @@ export class DataSetOptionsComponent implements OnChanges {
 
     // make sure the listener knows this date exists for the set chosen
     if (this.dateControl.value !== -1 && this.dateOptions.findIndex(date => date.value === this.dateControl.value) !== -1) {
-      throw new Error('Missing Logic');
+      this.changeDate.emit(this.dateControl.value);
     } else {
       // or let them know to hold 'em
-      throw new Error('Missing Logic');
+      this.dateControl.setValue(-1);
+      this.changeDate.emit(-1);
     }
   }
 
