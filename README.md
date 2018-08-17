@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/moodyroto/matr-2018-onboarding.svg?branch=develop)](https://travis-ci.org/moodyroto/matr-2018-onboarding)
+
 # Map Widget
 
 Angular Map Widget using Material Design.
